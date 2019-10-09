@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Open+Sans:400,400i&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+@import url("section-header.css");
+@import url("section-top.css");
+@import url("section-collections.css");
+@import url("section-types.css");
+@import url("section-products.css");
+@import url("section-blog.css");
+@import url("section-information.css");
+@import url("section-footer.css");
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #171717;
+}
+
+.container {
+	min-width: 320px;
+	max-width: 100%;
+}
+
+.wrap {
+	min-width: 320px;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	transition-duration: 0.3s;
+}
+
+.title {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 2.6px;
+	color: #2d2b27;
+	text-transform: uppercase;
+}
+
+@media (max-width: 479px) {
+	.title {
+		font-size: 20px;
+	}
+}

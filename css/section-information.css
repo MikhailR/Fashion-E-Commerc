@@ -1,0 +1,177 @@
+.information {
+	background-color: #f8f8f8;
+	padding: 240px 0 100px;
+}
+
+.information__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.information__block {
+	flex-basis: 74.4%;
+	display: flex;
+}
+
+.information__part {
+	flex-basis: 25%;
+}
+
+.part__title {
+	text-transform: uppercase;
+	color: #575153;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	margin-bottom: 25px;
+}
+
+.part__list {
+	list-style: none;
+	display: block;
+}
+
+.part__list li a {
+	text-decoration: none;
+	color: #727272;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.part__list li a:hover {
+	color: #575153;
+	font-weight: 700;
+}
+
+.information__contacts {
+	flex-basis: 23.2%;
+	box-sizing: border-box;
+	padding: 0 24px;
+	color: #727272;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.bold-text {
+	color: #000;
+	font-weight: 700;
+}
+
+.contacts__address {
+	line-height: 20px;
+	margin-top: 30px;
+}
+
+@media (max-width: 1300px) {
+	.information {
+		padding-top: 200px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.information {
+		padding-top: 170px;
+	}
+
+	.information__block {
+		flex-basis: 70%;
+	}
+
+	.information__contacts {
+		flex-basis: 28%;
+	}
+}
+
+@media (max-width: 979px) {
+	.information {
+		padding: 110px 0 20px;
+	}
+
+	.information__block {
+		flex-basis: 60%;
+		flex-wrap: wrap;
+		padding-left: 40px;
+	}
+
+	.information__part {
+		flex-basis: 50%;
+	}
+
+	.information__part:first-child,
+	.information__part:nth-child(2) {
+		margin-bottom: 30px;
+	}
+
+	.information__contacts {
+		flex-basis: 35%;
+	}
+}
+
+@media (max-width: 767px) {
+	.information {
+		padding-top: 90px;
+	}
+
+	.information__block {
+		padding-left: 20px;
+	}
+
+	.part__title {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	.information__contacts {
+		padding: 0;
+	}
+
+	.contacts__phone,
+	.contacts__email,
+	.contacts__address,
+	.part__list li a {
+		font-size: 11px;
+		line-height: 15px;
+	}
+
+	.contacts__address {
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 550px) {
+	.information__block {
+		flex-basis: 55%;
+		padding-left: 0;
+	}
+
+	.information__contacts {
+		flex-basis: 45%;
+	}
+}
+
+@media (max-width: 479px) {
+	.information__wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.information__block {
+		flex-basis: 95%;
+		margin-bottom: 15px;
+	}
+
+	.information__contacts {
+		flex-basis: 60%;
+	}
+
+	.information__part:first-child,
+	.information__part:nth-child(2) {
+		margin-bottom: 15px;
+	}
+
+	.part__title {
+		margin-bottom: 0;
+	}
+}
